@@ -1,0 +1,15 @@
+{
+    "transaction_screening_agent": {  
+        "RISK": 2,  
+        "REASON": "The customer's transaction history shows a couple of activities that warrant a low level of scrutiny. There were two large transactions, one just below the reporting threshold and another involving a country with moderate risk. These transactions, although slightly unusual, are not highly suspicious and may have legitimate explanations. Overall, the customer's financial behavior is mostly consistent with their declared income and typical activities, resulting in a low suspicion score of 2"  
+    },
+    "adverse_media_screener":  {
+        "Risk": 1,
+        "Reason": "No articles found relating to Shivam Singh.",
+        "Evidence": []
+        },
+    "geotag_screener": {
+        "Risk": "5",
+        "Reason": "The IP addresses are located in widely dispersed geographical locations (Manchester, UK; Johannesburg, South Africa; and Hanoi, Vietnam), indicating a high risk of fraudulent activity."
+        }
+}

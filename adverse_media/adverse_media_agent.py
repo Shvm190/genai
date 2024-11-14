@@ -10,7 +10,7 @@ from crewai import LLM, Agent, Task, Crew
 
 import os, sys, json
 
-os.environ["AZURE_API_KEY"] = "63a57a259faa4a1d972d64a002f59adc"
+os.environ["AZURE_API_KEY"] = "KEY"
 os.environ["AZURE_API_BASE"] = "https://genai-openai-tmquant.openai.azure.com/"
 os.environ["AZURE_API_VERSION"] = "2024-02-15-preview"
 

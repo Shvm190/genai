@@ -30,7 +30,7 @@ def invoke_agent(chat_prompt):
     # Get Env Variables
     endpoint = os.getenv("AZURE_API_BASE", "https://genai-openai-tmquant.openai.azure.com/")  
     deployment = os.getenv("DEPLOYMENT_NAME", "gpt-4o")
-    subscription_key = os.getenv("AZURE_OPENAI_API_KEY", "63a57a259faa4a1d972d64a002f59adc")  
+    subscription_key = os.getenv("AZURE_OPENAI_API_KEY", "KEY")  
     api_version = os.getenv("AZURE_API_VERSION", "2024-02-15-preview")  
 
     print(f"endpoint {endpoint}, \napi_key={subscription_key}\napi_version={api_version}")

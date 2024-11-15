@@ -59,8 +59,13 @@ def invoke_agent(chat_prompt):
 
 def output_formatting(agent_response):
     resp_imp = agent_response.to_dict()["choices"][0]["message"]["content"]
-    
-    return resp_imp
+
+    try:
+        cleaned_json_string = resp_imp.strip('```json\n')
+        resp_formatted = json.loads(cleaned_json_string)
+    except:
+        print(resp_imp)
+    return resp_formatted
 
 
 if __name__=='__main__':

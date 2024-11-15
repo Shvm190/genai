@@ -1,15 +1,56 @@
 {
-    "transaction_screening_agent": {  
-        "RISK": 2,  
-        "REASON": "The customer's transaction history shows a couple of activities that warrant a low level of scrutiny. There were two large transactions, one just below the reporting threshold and another involving a country with moderate risk. These transactions, although slightly unusual, are not highly suspicious and may have legitimate explanations. Overall, the customer's financial behavior is mostly consistent with their declared income and typical activities, resulting in a low suspicion score of 2"  
+    "adverse_media": {
+        "Risk": 4,
+        "Reason": "The articles are recent (2024), from reliable sources, and involve serious allegations that suggest suspicious activities with risk level 3.",
+        "Evidence": [
+            {
+                "date": "",
+                "source": "",
+                "headline": "",
+                "url": ""
+            }
+        ]
     },
-    "adverse_media_screener":  {
-        "Risk": 1,
-        "Reason": "No articles found relating to Shivam Singh.",
-        "Evidence": []
-        },
-    "geotag_screener": {
-        "Risk": "5",
-        "Reason": "The IP addresses are located in widely dispersed geographical locations (Manchester, UK; Johannesburg, South Africa; and Hanoi, Vietnam), indicating a high risk of fraudulent activity."
+    "geolocation": {
+        "Risk": 2,
+        "Reason": "The IP addresses are located in geographies that raise a risk flag with risk level 3.",
+        "Evidence": [
+            "192.168.1.165",
+            "172.16.0.56"
+        ]
+    },
+    "transaction_activity": {
+        "Risk": 3,
+        "Reason": "The customer's transactions suggest possible money laundering or fraud, with a risk level of 3.",
+        "Evidence": [
+            {
+                "Risk": 2,
+                "Reason for Flagging": "Frequent small transfers to different accounts",
+                "Transaction ID": "T6432",
+                "Transaction Amount": 26518,
+                "Transaction Date": "5/19/2024 8:19"
+            }
+        ]
+    },
+    "kyc_information": {
+        "Risk": 3,
+        "Reason": "The customer exhibits risk factors indicating overall risk level 3 based on KYC information.",
+        "Evidence": [
+            {
+                "Risk_Factor": "PEP_Status",
+                "Status": "No"
+            },
+            {
+                "Risk_Factor": "Sanction_List",
+                "Status": "No"
+            }
+        ],
+        "Details": {
+            "Customer_ID": "366733522",
+            "Full_Name": "Customer 844",
+            "Source_of_Funds": "Salary, Investments",
+            "Occupation": "Software Engineer",
+            "KYC_Review_Date": "2024-09-12"
         }
+    }
 }
